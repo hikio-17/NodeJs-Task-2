@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Biodata</title>
+   <link rel="stylesheet" type="text/css" href="http://localhost:5000/style.css">
+</head>
+<body>
+  <div class="login-box">
+      <p>My Biodata</p>
+      <form>
+        <div class="user-box">
+          <input required="" name="" type="text" value="<%= data.nama %>">
+          <label>Nama</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="" type="text" value="<%= data['tempat-lahir'] %>">
+          <label>Tempat Lahir</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="" type="text" value="<%= data['tanggal-lahir'] %>">
+          <label>Tanggal Lahir</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="" type="text" value="<%= data.alamat %>">
+          <label>Alamat</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Don't Repeat Your Self
+        </a>
+      </form>
+  </div>
+</body>
+</html>

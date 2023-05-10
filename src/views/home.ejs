@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Create Your Biodata</title>
+   <link rel="stylesheet" type="text/css" href="http://localhost:5000/style.css">
+</head>
+<body>
+  <div class="login-box">
+      <p>Biodata</p>
+      <form action="http://localhost:5000/api/views/biodata" method="POST">
+        <div class="user-box">
+          <input 
+            required="" 
+            name="nama" 
+            type="text"
+            oninvalid="this.setCustomValidity('Nama Tidak Boleh Kosong')"
+            oninput="this.setCustomValidity('')"
+          >
+          <label>Nama</label>
+        </div>
+        <div class="user-box">
+          <input 
+            required="" 
+            name="tmpLahir" 
+            type="text"
+            oninvalid="this.setCustomValidity('Tempat Lahir Tidak Boleh Kosong.')"
+            oninput="this.setCustomValidity('')"
+          >
+          <label>Tempat Lahir</label>
+        </div>
+        <div class="user-box">
+          <input 
+            required="" 
+            name="tglLahir" 
+            type="text"
+            oninvalid="this.setCustomValidity('Tangal Lahir Tidak Boleh Kosong.')"
+            oninput="this.setCustomValidity('')"
+          >
+          <label>Tanggal Lahir</label>
+        </div>
+        <div class="user-box">
+          <input 
+            required="" 
+            name="alamat" 
+            type="text"
+            oninvalid="this.setCustomValidity('Alamat tidak boleh kosong.')"
+            oninput="this.setCustomValidity('')"
+          >
+          <label>Alamat</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <button type="submit">Simpan Data</button>
+        </a>
+      </form>
+  </div>
+</body>
+</html>
