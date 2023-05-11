@@ -1,6 +1,6 @@
 const getBiodata = (req, res) => {
   const user = {
-    nama: 'Fajri Muhammad Tio',
+    name: 'Fajri Muhammad Tio',
     tmpLahir: 'Lawang Agung',
     tglLahir: '6 Januari 2000',
     alamat: 'Jl.Depati Parbo Kota Sungai Penuh',
@@ -9,7 +9,7 @@ const getBiodata = (req, res) => {
   res.json({
     status: 'success',
     data: {
-      nama: req.query.nama || user.nama,
+      nama: req.query.name || user.name,
       'tempat-lahir': req.query['tempat-lahir'] || user.tmpLahir,
       'tanggal-lahir': req.query['tanggal-lahir'] || user.tglLahir,
       alamat: req.query.alamat || user.alamat,
@@ -43,14 +43,14 @@ const postBiodata = (req, res) => {
 
 const getBiodataView = (req, res) => {
   const user = {
-    nama: 'Fajri Muhammad Tio',
+    name: 'Fajri Muhammad Tio',
     tmpLahir: 'Lawang Agung',
     tglLahir: '6 Januari 2000',
     alamat: 'Jl.Depati Parbo Kota Sungai Penuh',
   };
 
   const data = {
-    nama: req.query.nama || user.nama,
+    nama: req.query.name || user.name,
     'tempat-lahir': req.query['tempat-lahir'] || user.tmpLahir,
     'tanggal-lahir': req.query['tanggal-lahir'] || user.tglLahir,
     alamat: req.query.alamat || user.alamat,
