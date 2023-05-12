@@ -6,6 +6,7 @@ const path = require('path');
 const app = express();
 
 require('dotenv').config();
+
 /** LOGGER FUNCTION */
 const logger = (req, res, next) => {
   const date = new Date().toISOString();
